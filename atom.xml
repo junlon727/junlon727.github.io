@@ -75,33 +75,6 @@
   </entry>
   
   <entry>
-    <title>hexo博客添加RSS</title>
-    <link href="https://junlon727.github.io/2020/03/06/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/"/>
-    <id>https://junlon727.github.io/2020/03/06/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/</id>
-    <published>2020-03-06T11:14:12.000Z</published>
-    <updated>2020-04-07T14:27:34.157Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="hexo博客添加RSS"><a href="#hexo博客添加RSS" class="headerlink" title="hexo博客添加RSS"></a>hexo博客添加RSS</h1><h2 id="安装feed插件"><a href="#安装feed插件" class="headerlink" title="安装feed插件"></a>安装feed插件</h2><p>hexo博客有一个专门生成RSS xml文件的插件<code>hexo-generator-feed</code></p><p>执行命令</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-feed</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="启用插件"><a href="#启用插件" class="headerlink" title="启用插件"></a>启用插件</h2><p>在博客工程文件根目录下<code>_config.yml</code>文件中添加如下内容</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">    <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">    <span class="attr">limit:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure><h2 id="生成RSS"><a href="#生成RSS" class="headerlink" title="生成RSS"></a>生成RSS</h2><p>执行<code>hexo g</code>即可</p><h2 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h2><p>Foxmail：新建订阅输入atom.xml地址</p><p><img src="images/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/image-20200326222025022.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;hexo博客添加RSS&quot;&gt;&lt;a href=&quot;#hexo博客添加RSS&quot; class=&quot;headerlink&quot; title=&quot;hexo博客添加RSS&quot;&gt;&lt;/a&gt;hexo博客添加RSS&lt;/h1&gt;&lt;h2 id=&quot;安装feed插件&quot;&gt;&lt;a href=&quot;#安装feed插件&quot; class=&quot;headerlink&quot; title=&quot;安装feed插件&quot;&gt;&lt;/a&gt;安装feed插件&lt;/h2&gt;&lt;p&gt;hexo博客有一个专门生成RSS xml文件的插件&lt;code&gt;hexo-generator-feed&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;执行命令&lt;/p&gt;
-&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt; hexo-generator-feed&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="https://junlon727.github.io/tags/hexo/"/>
-    
-      <category term="RSS" scheme="https://junlon727.github.io/tags/RSS/"/>
-    
-      <category term="博客" scheme="https://junlon727.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>yilla主题增加gitalk评论插件</title>
     <link href="https://junlon727.github.io/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/"/>
     <id>https://junlon727.github.io/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</id>
@@ -125,6 +98,33 @@
       <category term="yilla主题" scheme="https://junlon727.github.io/tags/yilla%E4%B8%BB%E9%A2%98/"/>
     
       <category term="评论" scheme="https://junlon727.github.io/tags/%E8%AF%84%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客添加RSS</title>
+    <link href="https://junlon727.github.io/2020/03/06/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/"/>
+    <id>https://junlon727.github.io/2020/03/06/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/</id>
+    <published>2020-03-06T11:14:12.000Z</published>
+    <updated>2020-04-07T14:27:34.157Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hexo博客添加RSS"><a href="#hexo博客添加RSS" class="headerlink" title="hexo博客添加RSS"></a>hexo博客添加RSS</h1><h2 id="安装feed插件"><a href="#安装feed插件" class="headerlink" title="安装feed插件"></a>安装feed插件</h2><p>hexo博客有一个专门生成RSS xml文件的插件<code>hexo-generator-feed</code></p><p>执行命令</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-feed</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="启用插件"><a href="#启用插件" class="headerlink" title="启用插件"></a>启用插件</h2><p>在博客工程文件根目录下<code>_config.yml</code>文件中添加如下内容</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">    <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">    <span class="attr">limit:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure><h2 id="生成RSS"><a href="#生成RSS" class="headerlink" title="生成RSS"></a>生成RSS</h2><p>执行<code>hexo g</code>即可</p><h2 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h2><p>Foxmail：新建订阅输入atom.xml地址</p><p><img src="images/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/image-20200326222025022.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;hexo博客添加RSS&quot;&gt;&lt;a href=&quot;#hexo博客添加RSS&quot; class=&quot;headerlink&quot; title=&quot;hexo博客添加RSS&quot;&gt;&lt;/a&gt;hexo博客添加RSS&lt;/h1&gt;&lt;h2 id=&quot;安装feed插件&quot;&gt;&lt;a href=&quot;#安装feed插件&quot; class=&quot;headerlink&quot; title=&quot;安装feed插件&quot;&gt;&lt;/a&gt;安装feed插件&lt;/h2&gt;&lt;p&gt;hexo博客有一个专门生成RSS xml文件的插件&lt;code&gt;hexo-generator-feed&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;执行命令&lt;/p&gt;
+&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt; hexo-generator-feed&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://junlon727.github.io/tags/hexo/"/>
+    
+      <category term="博客" scheme="https://junlon727.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="RSS" scheme="https://junlon727.github.io/tags/RSS/"/>
     
   </entry>
   
