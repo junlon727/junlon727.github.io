@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="https://junlon727.github.io">
   <title>yilla主题添加 valine 评论系统 | liujunlong的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="添加 valine 评论系统 leancloud官网：https:&#x2F;&#x2F;leancloud.cn&#x2F; 注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key      修改 themes&#x2F;yilia&#x2F;_config.yml 添加valine 评论系统： 12345678910#6、Valine https:&#x2F;&#x2F;valine.js.orgvaline:  appid">
+  <meta name="description" content="添加 valine 评论系统 leancloud官网：https:&#x2F;&#x2F;leancloud.cn&#x2F; 注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key      修改 themes&#x2F;yilia&#x2F;_config.yml 添加valine 评论系统：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="yilla主题添加 valine 评论系统">
 <meta property="og:url" content="https://junlon727.github.io/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="liujunlong的博客">
-<meta property="og:description" content="添加 valine 评论系统 leancloud官网：https:&#x2F;&#x2F;leancloud.cn&#x2F; 注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key      修改 themes&#x2F;yilia&#x2F;_config.yml 添加valine 评论系统： 12345678910#6、Valine https:&#x2F;&#x2F;valine.js.orgvaline:  appid">
+<meta property="og:description" content="添加 valine 评论系统 leancloud官网：https:&#x2F;&#x2F;leancloud.cn&#x2F; 注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key      修改 themes&#x2F;yilia&#x2F;_config.yml 添加valine 评论系统：">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://junlon727.github.io/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/image-20200329154719578.png">
 <meta property="article:published_time" content="2020-03-06T12:14:12.000Z">
-<meta property="article:modified_time" content="2020-04-06T15:08:07.071Z">
+<meta property="article:modified_time" content="2020-04-07T14:29:13.920Z">
 <meta property="article:author" content="Liu Junlong">
 <meta property="article:tag" content="博客">
 <meta property="article:tag" content="yilla主题">
@@ -54,6 +54,7 @@ var _hmt = _hmt || [];
 </script>
 
 
+  <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body>
@@ -214,6 +215,8 @@ var _hmt = _hmt || [];
 
 <ol start="2">
 <li><p><strong>修改 themes/yilia/_config.yml 添加valine 评论系统：</strong></p>
+<a id="more"></a>
+
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#6、Valine https://valine.js.org</span></span><br><span class="line"><span class="attr">valine:</span> </span><br><span class="line"> <span class="attr">appid:</span> <span class="comment">#Leancloud应用的appId</span></span><br><span class="line"> <span class="attr">appkey:</span> <span class="comment">#Leancloud应用的appKey</span></span><br><span class="line"> <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment">#验证码</span></span><br><span class="line"> <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment">#评论回复提醒</span></span><br><span class="line"> <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment">#评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide</span></span><br><span class="line"> <span class="attr">placeholder:</span> <span class="string">老许你要老婆不</span> <span class="comment">#评论框占位符</span></span><br><span class="line"> <span class="string">page</span></span><br><span class="line"> <span class="attr">Size:</span> <span class="number">10</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>打开 <code>themes\yilia\layout\_partial\article.ejs</code> 文件</strong></p>
@@ -694,5 +697,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
+  <!-- 代码块复制功能 -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+  <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="/js/clipboard.js"></script>  -->
+  <script type="text/javascript" src="/js/clipboard_use.js"></script>
 </body>
 </html>

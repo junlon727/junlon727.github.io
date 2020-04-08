@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://junlon727.github.io">
   <title>yilla主题实现旋转头像效果 | liujunlong的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="实现旋转头像效果 新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;	&#x2F;* 控制旋转速度时间*&#x2F;  -webkit-transition: -webkit-transform 1.0s ease-out;  -moz-transition: -moz">
+  <meta name="description" content="实现旋转头像效果 新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;   	&#x2F;* 控制旋转速度时间*&#x2F;     -webkit-transition: -webkit-transform 1.0s ease-out;     -moz-transit">
 <meta property="og:type" content="article">
 <meta property="og:title" content="yilla主题实现旋转头像效果">
 <meta property="og:url" content="https://junlon727.github.io/2020/03/06/%E5%AE%9E%E7%8E%B0%E6%97%8B%E8%BD%AC%E5%A4%B4%E5%83%8F%E6%95%88%E6%9E%9C/index.html">
 <meta property="og:site_name" content="liujunlong的博客">
-<meta property="og:description" content="实现旋转头像效果 新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;	&#x2F;* 控制旋转速度时间*&#x2F;  -webkit-transition: -webkit-transform 1.0s ease-out;  -moz-transition: -moz">
+<meta property="og:description" content="实现旋转头像效果 新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;   	&#x2F;* 控制旋转速度时间*&#x2F;     -webkit-transition: -webkit-transform 1.0s ease-out;     -moz-transit">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-06T14:14:12.000Z">
-<meta property="article:modified_time" content="2020-04-06T14:18:19.586Z">
+<meta property="article:modified_time" content="2020-04-07T14:30:15.975Z">
 <meta property="article:author" content="Liu Junlong">
 <meta property="article:tag" content="博客">
 <meta property="article:tag" content="yilla主题">
@@ -51,6 +51,7 @@ var _hmt = _hmt || [];
 </script>
 
 
+  <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body>
@@ -204,9 +205,11 @@ var _hmt = _hmt || [];
       
         <h2 id="实现旋转头像效果"><a href="#实现旋转头像效果" class="headerlink" title="实现旋转头像效果"></a>实现旋转头像效果</h2><ol>
 <li><p><strong>新建 <code>themes\yilia\source\avatarrotation.css</code> 文件</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">  <span class="attribute">-webkit-transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">-moz-transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">  <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">   	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">     <span class="attribute">-webkit-transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">     <span class="attribute">-moz-transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">     <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">   	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">     <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">     <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">     <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 </li>
-<li><p><strong>修改 <code>themes\yilia\layout\_partial\head.ejs</code> 文件</strong></p>
+<li><p>修改 <code>themes\yilia\layout\_partial\head.ejs</code> 文件**</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&#39;css&#39;) %&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 旋转头像效果--&gt;</span><br><span class="line">  &lt;% if (theme.avatarrotation)&#123; %&gt;</span><br><span class="line">	&lt;link rel&#x3D;&quot;stylesheet&quot; type&#x3D;&quot;text&#x2F;css&quot; href&#x3D;&quot;&#x2F;.&#x2F;avatarrotation.css&quot;&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line">&lt;!-- 添加完成 --&gt;</span><br><span class="line"></span><br><span class="line">  &lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">  &lt;% var defaultCtnBg &#x3D; &#39;linear-gradient(200deg,#a0cfe4,#e8c37e)&#39; %&gt;</span><br><span class="line">    #container.show &#123;</span><br><span class="line">      background: &lt;%&#x3D; theme.style &amp;&amp; theme.style.slider ? theme.style.slider : defaultCtnBg %&gt;;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong><code>themes\yilia\_config.yml</code> 文件添加</strong></p>
@@ -666,5 +669,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
+  <!-- 代码块复制功能 -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+  <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="/js/clipboard.js"></script>  -->
+  <script type="text/javascript" src="/js/clipboard_use.js"></script>
 </body>
 </html>
