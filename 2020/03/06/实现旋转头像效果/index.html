@@ -8,17 +8,16 @@
   <link rel="dns-prefetch" href="https://junlon727.github.io">
   <title>yilla主题实现旋转头像效果 | liujunlong的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="实现旋转头像效果 新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;   	&#x2F;* 控制旋转速度时间*&#x2F;     -webkit-transition: -webkit-transform 1.0s ease-out;     -moz-transit">
+  <meta name="description" content="实现旋转头像效果新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;	&#x2F;* 控制旋转速度时间*&#x2F;  -webkit-transition: -webkit-transform 1.0s ease-out;  -moz-transition: -moz-">
 <meta property="og:type" content="article">
 <meta property="og:title" content="yilla主题实现旋转头像效果">
 <meta property="og:url" content="https://junlon727.github.io/2020/03/06/%E5%AE%9E%E7%8E%B0%E6%97%8B%E8%BD%AC%E5%A4%B4%E5%83%8F%E6%95%88%E6%9E%9C/index.html">
 <meta property="og:site_name" content="liujunlong的博客">
-<meta property="og:description" content="实现旋转头像效果 新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;   	&#x2F;* 控制旋转速度时间*&#x2F;     -webkit-transition: -webkit-transform 1.0s ease-out;     -moz-transit">
+<meta property="og:description" content="实现旋转头像效果新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;	&#x2F;* 控制旋转速度时间*&#x2F;  -webkit-transition: -webkit-transform 1.0s ease-out;  -moz-transition: -moz-">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-06T14:14:12.000Z">
-<meta property="article:modified_time" content="2020-04-07T14:30:15.975Z">
+<meta property="article:modified_time" content="2020-04-12T08:09:22.971Z">
 <meta property="article:author" content="Liu Junlong">
-<meta property="article:tag" content="博客">
 <meta property="article:tag" content="yilla主题">
 <meta name="twitter:card" content="summary">
   
@@ -203,20 +202,17 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="实现旋转头像效果"><a href="#实现旋转头像效果" class="headerlink" title="实现旋转头像效果"></a>实现旋转头像效果</h2><ol>
-<li><p><strong>新建 <code>themes\yilia\source\avatarrotation.css</code> 文件</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">   	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">     <span class="attribute">-webkit-transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">     <span class="attribute">-moz-transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">     <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">   	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">     <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">     <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">     <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="实现旋转头像效果"><a href="#实现旋转头像效果" class="headerlink" title="实现旋转头像效果"></a>实现旋转头像效果</h2><p><strong>新建 themes\yilia\source\avatarrotation.css 文件</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">  <span class="attribute">-webkit-transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">-moz-transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">  <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
-</li>
-<li><p>修改 <code>themes\yilia\layout\_partial\head.ejs</code> 文件**</p>
+
+<p><strong>修改 themes\yilia\layout_partial\head.ejs文件</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&#39;css&#39;) %&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 旋转头像效果--&gt;</span><br><span class="line">  &lt;% if (theme.avatarrotation)&#123; %&gt;</span><br><span class="line">	&lt;link rel&#x3D;&quot;stylesheet&quot; type&#x3D;&quot;text&#x2F;css&quot; href&#x3D;&quot;&#x2F;.&#x2F;avatarrotation.css&quot;&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line">&lt;!-- 添加完成 --&gt;</span><br><span class="line"></span><br><span class="line">  &lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">  &lt;% var defaultCtnBg &#x3D; &#39;linear-gradient(200deg,#a0cfe4,#e8c37e)&#39; %&gt;</span><br><span class="line">    #container.show &#123;</span><br><span class="line">      background: &lt;%&#x3D; theme.style &amp;&amp; theme.style.slider ? theme.style.slider : defaultCtnBg %&gt;;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong><code>themes\yilia\_config.yml</code> 文件添加</strong></p>
+
+<p><strong>themes\yilia_config.yml 文件添加</strong></p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#头像是否旋转(如果不要旋转取false)</span></span><br><span class="line"><span class="attr">avatarrotation:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
-</li>
-</ol>
 
       
 
@@ -255,10 +251,6 @@ var _hmt = _hmt || [];
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilla主题</a>
         		</li>
@@ -516,7 +508,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">init</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -524,27 +516,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">yilla主题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">评论</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">浏览量统计</a>
               </li>
             
             <div class="clearfix"></div>

@@ -199,9 +199,8 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="实现旋转头像效果"><a href="#实现旋转头像效果" class="headerlink" title="实现旋转头像效果"></a>实现旋转头像效果</h2><ol>
-<li><p><strong>新建 <code>themes\yilia\source\avatarrotation.css</code> 文件</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">   	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">     <span class="attribute">-webkit-transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">     <span class="attribute">-moz-transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">     <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">   	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">     <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">     <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">     <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li></ol>
+        <h2 id="实现旋转头像效果"><a href="#实现旋转头像效果" class="headerlink" title="实现旋转头像效果"></a>实现旋转头像效果</h2><p><strong>新建 themes\yilia\source\avatarrotation.css 文件</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">  <span class="attribute">-webkit-transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">-moz-transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">  <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         
           <a class="article-more-a" href="/2020/03/06/%E5%AE%9E%E7%8E%B0%E6%97%8B%E8%BD%AC%E5%A4%B4%E5%83%8F%E6%95%88%E6%9E%9C/#more">more >></a>
         
@@ -216,10 +215,6 @@ var _hmt = _hmt || [];
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilla主题</a>
         		</li>
@@ -291,15 +286,11 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="添加-valine-评论系统"><a href="#添加-valine-评论系统" class="headerlink" title="添加 valine 评论系统"></a>添加 valine 评论系统</h2><ol>
-<li><p><strong>leancloud官网：<a href="https://leancloud.cn/" target="_blank" rel="noopener">https://leancloud.cn/</a></strong></p>
+        <h2 id="添加-valine-评论系统"><a href="#添加-valine-评论系统" class="headerlink" title="添加 valine 评论系统"></a>添加 valine 评论系统</h2><p><strong>leancloud官网：<a href="https://leancloud.cn/" target="_blank" rel="noopener">https://leancloud.cn/</a></strong></p>
 <p>注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key</p>
-</li>
-</ol>
 <img src="/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/image-20200329154719578.png" style="zoom: 67%;">
 
-<ol start="2">
-<li><p><strong>修改 themes/yilia/_config.yml 添加valine 评论系统：</strong></p></li></ol>
+<p><strong>修改 themes/yilia/_config.yml 添加valine 评论系统：</strong></p>
         
           <a class="article-more-a" href="/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/#more">more >></a>
         
@@ -315,15 +306,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilla主题</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">评论</a>
         		</li>
       		
 		</ul>
@@ -334,102 +317,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-增加gitalk评论插件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">yilla主题增加gitalk评论插件</a>
-    </h1>
-  
-
-		
-			<br>
-			 <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-				<span class="icon-book"></span>
-				<span id="busuanzi_container_page_pv" style=" display: inline;">
-				阅读数 <span id="busuanzi_value_page_pv"></span>
-				</span>
-			</a>
-		
-        
-        <a href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/" class="archive-article-date">
-  	<time datetime="2020-03-06T11:14:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Hexo主题yilia增加gitalk评论插件"><a href="#Hexo主题yilia增加gitalk评论插件" class="headerlink" title="Hexo主题yilia增加gitalk评论插件"></a>Hexo主题yilia增加gitalk评论插件</h1><h2 id="关于gitalk"><a href="#关于gitalk" class="headerlink" title="关于gitalk"></a>关于gitalk</h2><p>gitalk 使用 Github 帐号登录，界面干净整洁，并且支持<code>Markdown</code>语法。</p>
-<p>Gitalk 是一个利用 Github API,基于 Github issue 和 Preact 开发的评论插件，在 Gitalk 之前还有一个 <a href="https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fimsun%2Fgitment" target="_blank" rel="noopener">gitment</a> 插件也是基于这个原理开发的,不过 gitment 已经很久没人维护了。</p>
-<p>可以看到在 gitalk 的评论框进行评论时，其实就是在对应的 issue 上提问题</p>
-        
-          <a class="article-more-a" href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilla主题</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">评论</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">展开全文 >></a>
         </p>
       
 
@@ -509,14 +396,6 @@ var _hmt = _hmt || [];
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">RSS</a>
-        		</li>
       		
 		</ul>
 	</div>
@@ -526,6 +405,94 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/03/06/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-增加gitalk评论插件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">yilla主题增加gitalk评论插件</a>
+    </h1>
+  
+
+		
+			<br>
+			 <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+				<span class="icon-book"></span>
+				<span id="busuanzi_container_page_pv" style=" display: inline;">
+				阅读数 <span id="busuanzi_value_page_pv"></span>
+				</span>
+			</a>
+		
+        
+        <a href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/" class="archive-article-date">
+  	<time datetime="2020-03-06T11:14:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Hexo主题yilia增加gitalk评论插件"><a href="#Hexo主题yilia增加gitalk评论插件" class="headerlink" title="Hexo主题yilia增加gitalk评论插件"></a>Hexo主题yilia增加gitalk评论插件</h1><h2 id="关于gitalk"><a href="#关于gitalk" class="headerlink" title="关于gitalk"></a>关于gitalk</h2><p>gitalk 使用 Github 帐号登录，界面干净整洁，并且支持<code>Markdown</code>语法。</p>
+<p>Gitalk 是一个利用 Github API,基于 Github issue 和 Preact 开发的评论插件，在 Gitalk 之前还有一个 <a href="https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fimsun%2Fgitment" target="_blank" rel="noopener">gitment</a> 插件也是基于这个原理开发的,不过 gitment 已经很久没人维护了。</p>
+<p>可以看到在 gitalk 的评论框进行评论时，其实就是在对应的 issue 上提问题</p>
+        
+          <a class="article-more-a" href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilla主题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">展开全文 >></a>
         </p>
       
 
@@ -605,15 +572,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilla主题</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">浏览量统计</a>
         		</li>
       		
 		</ul>
@@ -702,10 +661,6 @@ var _hmt = _hmt || [];
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">init</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">你好</a>
         		</li>
@@ -798,10 +753,6 @@ var _hmt = _hmt || [];
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
         		</li>
       		
 		</ul>
@@ -940,7 +891,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">init</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -948,27 +899,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">yilla主题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">评论</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">浏览量统计</a>
               </li>
             
             <div class="clearfix"></div>

@@ -8,20 +8,18 @@
   <link rel="dns-prefetch" href="https://junlon727.github.io">
   <title>yilla主题添加 valine 评论系统 | liujunlong的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="添加 valine 评论系统 leancloud官网：https:&#x2F;&#x2F;leancloud.cn&#x2F; 注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key      修改 themes&#x2F;yilia&#x2F;_config.yml 添加valine 评论系统：">
+  <meta name="description" content="添加 valine 评论系统leancloud官网：https:&#x2F;&#x2F;leancloud.cn&#x2F; 注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key   修改 themes&#x2F;yilia&#x2F;_config.yml 添加valine 评论系统：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="yilla主题添加 valine 评论系统">
 <meta property="og:url" content="https://junlon727.github.io/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="liujunlong的博客">
-<meta property="og:description" content="添加 valine 评论系统 leancloud官网：https:&#x2F;&#x2F;leancloud.cn&#x2F; 注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key      修改 themes&#x2F;yilia&#x2F;_config.yml 添加valine 评论系统：">
+<meta property="og:description" content="添加 valine 评论系统leancloud官网：https:&#x2F;&#x2F;leancloud.cn&#x2F; 注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key   修改 themes&#x2F;yilia&#x2F;_config.yml 添加valine 评论系统：">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://junlon727.github.io/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/image-20200329154719578.png">
 <meta property="article:published_time" content="2020-03-06T12:14:12.000Z">
-<meta property="article:modified_time" content="2020-04-07T14:29:13.920Z">
+<meta property="article:modified_time" content="2020-04-12T08:10:02.684Z">
 <meta property="article:author" content="Liu Junlong">
-<meta property="article:tag" content="博客">
 <meta property="article:tag" content="yilla主题">
-<meta property="article:tag" content="评论">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://junlon727.github.io/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/image-20200329154719578.png">
   
@@ -206,32 +204,25 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="添加-valine-评论系统"><a href="#添加-valine-评论系统" class="headerlink" title="添加 valine 评论系统"></a>添加 valine 评论系统</h2><ol>
-<li><p><strong>leancloud官网：<a href="https://leancloud.cn/" target="_blank" rel="noopener">https://leancloud.cn/</a></strong></p>
+        <h2 id="添加-valine-评论系统"><a href="#添加-valine-评论系统" class="headerlink" title="添加 valine 评论系统"></a>添加 valine 评论系统</h2><p><strong>leancloud官网：<a href="https://leancloud.cn/" target="_blank" rel="noopener">https://leancloud.cn/</a></strong></p>
 <p>注册完以后需要创建一个应用，名字可以随便起，然后 进入应用-&gt;设置-&gt;应用key</p>
-</li>
-</ol>
 <img src="/2020/03/06/%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/image-20200329154719578.png" style="zoom: 67%;">
 
-<ol start="2">
-<li><p><strong>修改 themes/yilia/_config.yml 添加valine 评论系统：</strong></p>
+<p><strong>修改 themes/yilia/_config.yml 添加valine 评论系统：</strong></p>
 <a id="more"></a>
 
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#6、Valine https://valine.js.org</span></span><br><span class="line"><span class="attr">valine:</span> </span><br><span class="line"> <span class="attr">appid:</span> <span class="comment">#Leancloud应用的appId</span></span><br><span class="line"> <span class="attr">appkey:</span> <span class="comment">#Leancloud应用的appKey</span></span><br><span class="line"> <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment">#验证码</span></span><br><span class="line"> <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment">#评论回复提醒</span></span><br><span class="line"> <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment">#评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide</span></span><br><span class="line"> <span class="attr">placeholder:</span> <span class="string">老许你要老婆不</span> <span class="comment">#评论框占位符</span></span><br><span class="line"> <span class="string">page</span></span><br><span class="line"> <span class="attr">Size:</span> <span class="number">10</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>打开 <code>themes\yilia\layout\_partial\article.ejs</code> 文件</strong></p>
+
+<p><strong>打开 <code>themes\yilia\layout\_partial\article.ejs</code> 文件</strong></p>
 <p>在<code>&lt;% if (!index &amp;&amp; post.comments){ %&gt;</code>这行代码后面添加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.valine &amp;&amp; theme.valine.appid &amp;&amp; theme.valine.appkey &amp;&amp; !index)&#123; %&gt;</span><br><span class="line">  &lt;section id&#x3D;&quot;comments&quot; class&#x3D;&quot;comments&quot;&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      .comments&#123;margin:30px;padding:10px;background:#fff&#125;</span><br><span class="line">      @media screen and (max-width:800px)&#123;.comments&#123;margin:auto;padding:10px;background:#fff&#125;&#125;</span><br><span class="line">    &lt;&#x2F;style&gt;</span><br><span class="line">    &lt;%- partial(&#39;post&#x2F;valine&#39;, &#123;</span><br><span class="line">      key: post.slug,</span><br><span class="line">      title: post.title,</span><br><span class="line">      url: config.url+url_for(post.path)</span><br><span class="line">      &#125;) %&gt;</span><br><span class="line">  &lt;&#x2F;section&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>打开 <code>hexo\themes\yilia\layout_partial\post</code> 文件夹，新建 <code>valine.ejs</code> 文件</strong></p>
+
+<p><strong>打开 <code>hexo\themes\yilia\layout_partial\post</code> 文件夹，新建 <code>valine.ejs</code> 文件</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;vcomment&quot; class&#x3D;&quot;comment&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;jquery&#x2F;dist&#x2F;jquery.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;leancloud-storage&#x2F;dist&#x2F;av-min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&#39;&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;valine&#x2F;dist&#x2F;Valine.min.js&#39;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">   var notify &#x3D; &#39;&lt;%&#x3D; theme.valine.notify %&gt;&#39; &#x3D;&#x3D; true ? true : false;</span><br><span class="line">   var verify &#x3D; &#39;&lt;%&#x3D; theme.valine.verify %&gt;&#39; &#x3D;&#x3D; true ? true : false;</span><br><span class="line">   new Valine(&#123;</span><br><span class="line">            av: AV,</span><br><span class="line">            el: &#39;#vcomment&#39;,</span><br><span class="line">            notify: notify,</span><br><span class="line">            verify: verify,</span><br><span class="line">            app_id: &quot;&lt;%&#x3D; theme.valine.appid %&gt;&quot;,</span><br><span class="line">            app_key: &quot;&lt;%&#x3D; theme.valine.appkey %&gt;&quot;,</span><br><span class="line">            placeholder: &quot;&lt;%&#x3D; theme.valine.placeholder %&gt;&quot;,</span><br><span class="line">            avatar: &quot;&lt;%&#x3D; theme.valine.avatar %&gt;&quot;,</span><br><span class="line">            avatar_cdn: &quot;&lt;%&#x3D; theme.valine.avatar_cdn %&gt;&quot;,</span><br><span class="line">            pageSize: &lt;%&#x3D; theme.valine.pageSize %&gt;</span><br><span class="line">    &#125;);</span><br><span class="line">    if(window.location.hash)&#123;</span><br><span class="line">        var checkExist &#x3D; setInterval(function() &#123;</span><br><span class="line">           if ($(window.location.hash).length) &#123;</span><br><span class="line">              $(&#39;html, body&#39;).animate(&#123;scrollTop: 		                           $(window.location.hash).offset().top-90&#125;, 1000);</span><br><span class="line">              clearInterval(checkExist);</span><br><span class="line">           &#125;</span><br><span class="line">        &#125;, 100);</span><br><span class="line">    &#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>查看效果<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></strong></p>
-</li>
-<li><p><strong>开启评论提醒</strong></p>
+
+<p><strong>查看效果<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></strong></p>
+<p><strong>开启评论提醒</strong></p>
 <p>移步<a href="https://www.cnblogs.com/huanhao/p/emailvaline.html" target="_blank" rel="noopener">https://www.cnblogs.com/huanhao/p/emailvaline.html</a></p>
-</li>
-</ol>
 
       
 
@@ -271,15 +262,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilla主题</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">评论</a>
         		</li>
       		
 		</ul>
@@ -359,8 +342,8 @@ var _hmt = _hmt || [];
     </a>
   
   
-    <a href="/2020/03/06/%E5%A2%9E%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">yilla主题增加gitalk评论插件</div>
+    <a href="/2020/03/06/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo博客添加RSS</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -544,7 +527,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">init</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -552,27 +535,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">yilla主题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">评论</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">浏览量统计</a>
               </li>
             
             <div class="clearfix"></div>
