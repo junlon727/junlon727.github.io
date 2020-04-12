@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://junlon727.github.io">
   <title>yilla主题实现旋转头像效果 | liujunlong的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="实现旋转头像效果新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;	&#x2F;* 控制旋转速度时间*&#x2F;  -webkit-transition: -webkit-transform 1.0s ease-out;  -moz-transition: -moz-">
+  <meta name="description" content="新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;	&#x2F;* 控制旋转速度时间*&#x2F;  -webkit-transition: -webkit-transform 1.0s ease-out;  -moz-transition: -moz-transfor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="yilla主题实现旋转头像效果">
 <meta property="og:url" content="https://junlon727.github.io/2020/03/06/%E5%AE%9E%E7%8E%B0%E6%97%8B%E8%BD%AC%E5%A4%B4%E5%83%8F%E6%95%88%E6%9E%9C/index.html">
 <meta property="og:site_name" content="liujunlong的博客">
-<meta property="og:description" content="实现旋转头像效果新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;	&#x2F;* 控制旋转速度时间*&#x2F;  -webkit-transition: -webkit-transform 1.0s ease-out;  -moz-transition: -moz-">
+<meta property="og:description" content="新建 themes\yilia\source\avatarrotation.css 文件 123456789101112.left-col #header .profilepic img &amp;#123;	&#x2F;* 控制旋转速度时间*&#x2F;  -webkit-transition: -webkit-transform 1.0s ease-out;  -moz-transition: -moz-transfor">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-06T14:14:12.000Z">
-<meta property="article:modified_time" content="2020-04-12T08:09:22.971Z">
+<meta property="article:modified_time" content="2020-04-12T10:31:16.798Z">
 <meta property="article:author" content="Liu Junlong">
 <meta property="article:tag" content="yilla主题">
 <meta name="twitter:card" content="summary">
@@ -173,7 +173,9 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-实现旋转头像效果" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-实现旋转头像效果"
+         class="article article-type-post " itemscope
+         itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -184,17 +186,17 @@ var _hmt = _hmt || [];
     </h1>
   
 
-		
-			<br>
-			 <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-				<span class="icon-book"></span>
-				<span id="busuanzi_container_page_pv" style=" display: inline;">
-				阅读数 <span id="busuanzi_value_page_pv"></span>
-				</span>
-			</a>
-		
         
-        <a href="/2020/03/06/%E5%AE%9E%E7%8E%B0%E6%97%8B%E8%BD%AC%E5%A4%B4%E5%83%8F%E6%95%88%E6%9E%9C/" class="archive-article-date">
+          <a class="cloud-tie-join-count" href="javascript:void(0);" style="margin-right: 7.6923%; color: #999; float: right;">
+            <span class="icon-book"></span>
+            <span id="busuanzi_container_page_pv" style=" display: inline;">
+                  阅读数 <span id="busuanzi_value_page_pv"></span>
+                </span>
+          </a>
+        
+
+        
+          <a href="/2020/03/06/%E5%AE%9E%E7%8E%B0%E6%97%8B%E8%BD%AC%E5%A4%B4%E5%83%8F%E6%95%88%E6%9E%9C/" class="archive-article-date">
   	<time datetime="2020-03-06T14:14:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
 </a>
         
@@ -202,7 +204,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="实现旋转头像效果"><a href="#实现旋转头像效果" class="headerlink" title="实现旋转头像效果"></a>实现旋转头像效果</h2><p><strong>新建 themes\yilia\source\avatarrotation.css 文件</strong></p>
+        <p><strong>新建 themes\yilia\source\avatarrotation.css 文件</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="comment">/* 控制旋转速度时间*/</span></span><br><span class="line">  <span class="attribute">-webkit-transition</span>: -webkit-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">-moz-transition</span>: -moz-transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">1.0s</span> ease-out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="comment">/* 鼠标经过360% */</span></span><br><span class="line">  <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
@@ -223,14 +225,15 @@ var _hmt = _hmt || [];
             <span class="tooltip-item">
               赏
             </span>
-            <span class="tooltip-content">
+              <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                      class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
                     
-                    <div class="reward-box-item">
+                      <div class="reward-box-item">
                       <img class="reward-img" src="/assets/img/weixin.jpg">
                       <span class="reward-type">微信</span>
                     </div>
@@ -239,7 +242,7 @@ var _hmt = _hmt || [];
                 </span>
               </span>
             </span>
-          </div>
+            </div>
           </a>
         </div>
       
@@ -351,7 +354,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现旋转头像效果"><span class="toc-number">1.</span> <span class="toc-text">实现旋转头像效果</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
@@ -363,20 +366,31 @@ var _hmt = _hmt || [];
 
 
   
-  
+
   
 
   
+
   
 
   
-  
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div>
+    <section id="comments" class="comments">
+      <style>
+        .comments {
+          margin: 30px;
+          padding: 10px;
+          background: #fff
+        }
+
+        @media screen and (max-width: 800px) {
+          .comments {
+            margin: auto;
+            padding: 10px;
+            background: #fff
+          }
+        }
+      </style>
+      <div id="vcomment" class="comment"></div>
 <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 <script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
@@ -404,8 +418,8 @@ var _hmt = _hmt || [];
         }, 100);
     }
 </script>
-  </section>
-
+    </section>
+  
 
   
 
@@ -508,11 +522,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">你好</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">你好</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">

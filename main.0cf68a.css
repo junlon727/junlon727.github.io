@@ -2077,7 +2077,7 @@ pre .css ~ * .id, pre .id {
 
 .article-meta {
   width: 150px;
-  font-size: 14;
+  font-size: 14px;
   text-align: right;
   position: absolute;
   right: 0;
