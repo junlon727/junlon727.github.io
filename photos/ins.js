@@ -23,7 +23,7 @@
       id: moduleId,
       /******/
       loaded: false
-        /******/
+      /******/
     };
     /******/
     /******/ // Execute the module function
@@ -80,7 +80,7 @@
     }
 
     /**
-     * @name impush-client 
+     * @name impush-client
      * @description 这个项目让我发家致富…
      * @date 2016-12-1
      */
@@ -116,8 +116,8 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'http://q80ey0er5.bkt.clouddn.com/' + data.link[i] + '.min.jpg';
-          var src = 'http://q80ey0er5.bkt.clouddn.com/' + data.link[i];
+          var minSrc = 'http://litten.me/ins-min/' + data.link[i] + '.min.jpg';
+          var src = 'http://litten.me/ins/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '.jpg';
@@ -340,15 +340,15 @@
       var parseThumbnailElements = function parseThumbnailElements(el) {
         el = el.parentNode.parentNode;
         var thumbElements = el.getElementsByClassName('thumb'),
-          numNodes = thumbElements.length,
-          items = [],
-          figureEl,
-          linkEl,
-          size,
-          type,
-          // video or not
-          target,
-          item;
+            numNodes = thumbElements.length,
+            items = [],
+            figureEl,
+            linkEl,
+            size,
+            type,
+            // video or not
+            target,
+            item;
 
         for (var i = 0; i < numNodes; i++) {
 
@@ -417,12 +417,12 @@
         // alternatively, you may define index via data- attribute
         var clickedGallery = clickedListItem.parentNode,
 
-          // childNodes = clickedListItem.parentNode.childNodes,
-          // numChildNodes = childNodes.length,
-          childNodes = document.getElementsByClassName('thumb'),
-          numChildNodes = childNodes.length,
-          nodeIndex = 0,
-          index;
+            // childNodes = clickedListItem.parentNode.childNodes,
+            // numChildNodes = childNodes.length,
+            childNodes = document.getElementsByClassName('thumb'),
+            numChildNodes = childNodes.length,
+            nodeIndex = 0,
+            index;
 
         for (var i = 0; i < numChildNodes; i++) {
           if (childNodes[i].nodeType !== 1) {
@@ -446,7 +446,7 @@
       // parse picture index and gallery index from URL (#&pid=1&gid=2)
       var photoswipeParseHash = function photoswipeParseHash() {
         var hash = window.location.hash.substring(1),
-          params = {};
+            params = {};
 
         if (hash.length < 5) {
           return params;
@@ -473,9 +473,9 @@
 
       var openPhotoSwipe = function openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
         var pswpElement = document.querySelectorAll('.pswp')[0],
-          gallery,
-          options,
-          items;
+            gallery,
+            options,
+            items;
 
         items = parseThumbnailElements(galleryElement);
         // define options (if needed)
@@ -487,9 +487,9 @@
           getThumbBoundsFn: function getThumbBoundsFn(index) {
             // See Options -> getThumbBoundsFn section of documentation for more info
             var thumbnail = items[index].el.getElementsByTagName('img')[0],
-              // find thumbnail
-              pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-              rect = thumbnail.getBoundingClientRect();
+                // find thumbnail
+                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                rect = thumbnail.getBoundingClientRect();
 
             return {
               x: rect.left,
@@ -621,8 +621,8 @@
         }
 
         return instances[
-          instances.push(createInViewport(container)) - 1
-        ].isInViewport(elt, offset, cb);
+        instances.push(createInViewport(container)) - 1
+            ].isInViewport(elt, offset, cb);
       }
 
       function addEvent(el, type, fn) {
@@ -637,7 +637,7 @@
         var timeout;
         return function() {
           var context = this,
-            args = arguments;
+              args = arguments;
           var callNow = immediate && !timeout;
           clearTimeout(timeout);
           timeout = setTimeout(later, wait);
@@ -656,21 +656,21 @@
           return true;
         }
         return global.document.documentElement.compareDocumentPosition ?
-          function(a, b) {
-            return !!(a.compareDocumentPosition(b) & 16);
-          } :
-          global.document.documentElement.contains ?
-          function(a, b) {
-            return a !== b && (a.contains ? a.contains(b) : false);
-          } :
-          function(a, b) {
-            while (b = b.parentNode) {
-              if (b === a) {
-                return true;
-              }
-            }
-            return false;
-          };
+            function(a, b) {
+              return !!(a.compareDocumentPosition(b) & 16);
+            } :
+            global.document.documentElement.contains ?
+                function(a, b) {
+                  return a !== b && (a.contains ? a.contains(b) : false);
+                } :
+                function(a, b) {
+                  while (b = b.parentNode) {
+                    if (b === a) {
+                      return true;
+                    }
+                  }
+                  return false;
+                };
       }
 
       function createInViewport(container) {
@@ -760,12 +760,12 @@
 
           // The element must overlap with the visible part of the viewport
           var visible =
-            (
-              (eltRect.right > viewport.left) &&
-              (eltRect.left < viewport.right) &&
-              (eltRect.bottom > viewport.top) &&
-              (eltRect.top < viewport.bottom)
-            );
+              (
+                  (eltRect.right > viewport.left) &&
+                  (eltRect.left < viewport.right) &&
+                  (eltRect.bottom > viewport.top) &&
+                  (eltRect.top < viewport.bottom)
+              );
 
           return visible;
         }
@@ -843,8 +843,8 @@
 
         function knownNodes(mutation) {
           var nodes = concat.call([],
-            Array.prototype.slice.call(mutation.addedNodes),
-            mutation.target
+              Array.prototype.slice.call(mutation.addedNodes),
+              mutation.target
           );
           return filter.call(nodes, watches.isWatched).length > 0;
         }
