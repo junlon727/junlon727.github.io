@@ -116,24 +116,24 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'http://litten.me/ins-min/' + data.link[i] + '.min.jpg';
-          var src = 'http://litten.me/ins/' + data.link[i];
+          var minSrc = 'http://q840eee6a.bkt.clouddn.com/' + data.link[i] + '?imageView2/2/w/320/h/320/format/jpg/q/75';
+          var src = 'http://q840eee6a.bkt.clouddn.com/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
-          src += '.jpg';
+          // src += '.jpg';
 
-          liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">\
+          liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                 <a href="' + src + '" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + target + '">\
-                  <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/photos/ins.j/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
+                   <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="' + minSrc + '" itemprop="thumbnail" onload="lzld(this)">\
                 </a>\
                 <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
             </figure>';
         }
-        ulTmpl = ulTmpl + '<section class="archives album"><h1 class="year">' + data.year + '<em>' + data.month + '月</em></h1>\
+        ulTmpl = ulTmpl + '<section class="archives album"><h1 class="year">' + data.year +'年'+ '<em>' + data.month + '月</em></h1>\
         <ul class="img-box-ul">' + liTmpl + '</ul>\
         </section>';
       }
-      document.querySelector('.instagram').innerHTML = '<div class="photos" itemscope itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+      document.querySelector('.instagram').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
       createVideoIncon();
       _view2.default.init();
     };
@@ -335,7 +335,7 @@
 
     var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
-      // parse slide data (url, title, size ...) from DOM elements 
+      // parse slide data (url, title, size ...) from DOM elements
       // (children of gallerySelector)
       var parseThumbnailElements = function parseThumbnailElements(el) {
         el = el.parentNode.parentNode;
@@ -352,14 +352,14 @@
 
         for (var i = 0; i < numNodes; i++) {
 
-          figureEl = thumbElements[i]; // 
+          figureEl = thumbElements[i]; //
 
-          // include only element nodes 
+          // include only element nodes
           if (figureEl.nodeType !== 1) {
             continue;
           }
 
-          linkEl = figureEl.children[0]; // 
+          linkEl = figureEl.children[0]; //
 
           size = linkEl.getAttribute('data-size').split('x');
           type = linkEl.getAttribute('data-type');
@@ -503,7 +503,7 @@
         // PhotoSwipe opened from URL
         if (fromURL) {
           if (options.galleryPIDs) {
-            // parse real index when custom PIDs are used 
+            // parse real index when custom PIDs are used
             // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
             for (var j = 0; j < items.length; j++) {
               if (items[j].pid == index) {
