@@ -121,7 +121,7 @@
                     var src = 'http://q840eee6a.bkt.clouddn.com/' + data.link[i];
                     var type = data.type[i];
                     var target = src;// + (type === 'video' ? '.mp4' : '.jpg');
-                    src =    (type === 'video') ? "//"+src+"?vframe/jpg/offset/7/w/640/h/640" : src;
+                    src =    (type === 'video') ? src+"?vframe/jpg/offset/7/w/640/h/640" : src;
                     minSrc += (type === 'video' ? "?vframe/jpg/offset/7/w/320/h/320" : '?imageView2/2/w/320/h/320/format/jpg/q/75');
                     // src += '.jpg';
 
@@ -551,6 +551,7 @@
                         var style = $ctn.getElementsByClassName('pswp__img')[0].style;
                         var $video = document.createElement('video');
                         $video.setAttribute('autoplay', 'autoplay');
+                        $video.setAttribute('_ngcontent-c9', "");
                         $video.setAttribute('controls', 'controls');
                         $video.setAttribute('src', item.target);
                         $video.style.width = style.width;
